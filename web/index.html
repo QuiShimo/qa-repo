@@ -9,12 +9,25 @@
 <body>
   <div class="layout">
     <aside class="sidebar">
-      <h2>Главы и темы</h2>
+      <h2 class="sidebar-title">Темы вопросов</h2>
       <div id="nav"></div>
     </aside>
 
     <main class="content">
       <h1 id="topic-title">Выберите тему</h1>
+      <div id="list-toolbar" class="mode-toolbar">
+        <button id="quiz-mode-btn" class="view-btn" type="button">Перейти в викторину</button>
+      </div>
+
+      <div id="quiz-toolbar" class="mode-toolbar hidden">
+        <button id="list-mode-btn" class="view-btn" type="button">Вернуться к списку</button>
+
+        <div id="quiz-scope-switch" class="quiz-scope-switch">
+          <button class="quiz-scope-btn active" data-scope="topic" type="button">По теме</button>
+          <button class="quiz-scope-btn" data-scope="chapter" type="button">По главе</button>
+          <button class="quiz-scope-btn" data-scope="all" type="button">По всем темам</button>
+        </div>
+      </div>
       <div id="cards"></div>
     </main>
   </div>
