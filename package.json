@@ -1,0 +1,9 @@
+{
+  "name": "qa-repo",
+  "version": "1.0.0",
+  "scripts": {
+    "build:data": "node scripts/build.js",
+    "build": "npm run build:data",
+    "serve": "npx serve web"
+  }
+}
